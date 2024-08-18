@@ -1,0 +1,30 @@
+/* _header.scss */
+ 
+
+/* Nesting */ 
+header {
+    padding: $spacing-base;
+    background-color: $color-background;
+  
+    .logoimg {
+      max-height: 50px;
+    }
+  
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+  
+        li {
+          margin-right: $spacing-base;
+  
+          a {
+            text-decoration: none;
+            color: $color-secondary;
+          }
+        }
+      }
+    }
+  }

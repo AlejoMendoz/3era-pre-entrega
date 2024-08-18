@@ -1,0 +1,158 @@
+/* _responsive.scss */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      navul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      navulli {
+        margin: 10px0;
+      }
+    
+      #intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      
+      .Logo-grandeimg {
+        margin-top: $spacing-base;
+      }
+    
+      .portfolio-cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+    
+      .card {
+        margin: 0 auto;
+        width: 100%;
+      }
+    
+      .cardh3 {
+        font-size: $font-size-small;
+      }
+    
+      .cardp {
+        font-size: $font-size-small;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      navul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      navulli {
+        margin: 10px0;
+      }
+    
+      #intro {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    
+      .portfolio-cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+    
+      .card {
+        margin: 0 auto;
+        width: 100%;
+      }
+    
+      .cardh3 {
+        font-size: $font-size-small;
+      }
+    
+      .cardp {
+        font-size: $font-size-small;
+      }
+    }
+
+    /*Media Queries PAgina portfolio*/
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card h3 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-header {
+        padding: 30px 10px;
+        
+        h1 {
+            font-size: 30px;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+    }
+    
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        
+        .card {
+            margin: 0 auto;
+            width: 100%;
+            
+            h3 {
+                font-size: 16px;
+            }
+            
+            p {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+/*media querys pagina services */
+@media (max-width: 480px) {
+    .portfolio-header {
+        padding: 30px 10px;
+        
+        h1 {
+            font-size: 30px;
+        }
+        
+        p {
+            font-size: 16px;
+        }
+    }
+    
+    .portfolio-cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        
+        .card {
+            margin: 0 auto;
+            width: 100%;
+
+            h3 {
+                font-size: 16px;
+            }
+        }
+    }
+}

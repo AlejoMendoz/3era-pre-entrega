@@ -1,0 +1,14 @@
+/* _mixins.scss*/
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @mixin grid-center($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+    justify-content: center;
+    align-items: center;
+  }

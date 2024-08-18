@@ -1,0 +1,150 @@
+/* _portfolio.scss*/
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: $spacing-base;
+    padding: $spacing-base;
+  
+    .card {
+      background-color: $color-background;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+  
+      h3 {
+        font-size: 20px;
+        margin: 15px0;
+        color: $color-secondary;
+      }
+  
+      p {
+        font-size: $font-size-small;
+        color: $color-gray-dark;
+        margin: 0$spacing-base$spacing-base;
+      }
+    }
+  }
+
+
+  // Estilos generales de la página
+.My-portfolio {
+    background-color: $color-primary;
+    color: $color-dark;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 20px;
+    
+    h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+.educational-img {
+    width: 100%;
+    text-align: center;
+    
+    img {
+        max-width: 70%;
+        width: auto;
+    }
+}
+
+.description, .core {
+    background-color: $color-light;
+    padding: 50px;
+    margin: auto;
+    text-align: left;
+    max-width: 1200px;
+    
+    h2 {
+        margin-bottom: 15px;
+        font-size: 24px;
+        color: $color-dark;
+    }
+    
+    p {
+        font-size: 16px;
+        color: $color-dark;
+    }
+}
+
+.testimonial {
+    background-color: $color-secondary;
+    padding: 20px;
+    text-align: center;
+    
+    h2 {
+        margin-bottom: 15px;
+        font-size: 24px;
+        color: $color-dark;
+    }
+    
+    p {
+        font-size: 18px;
+        color: $color-dark;
+        margin: 10px 0;
+    }
+}
+
+// Estilos para la sección de portfolio y las tarjetas
+.portfolio-header {
+    background-color: $color-primary;
+    color: $color-dark;
+    text-align: center;
+    padding: 50px 20px;
+    
+    h1 {
+        font-size: 36px;
+        margin: 0;
+    }
+    
+    p {
+        font-size: 18px;
+        color: $color-dark;
+        margin-top: 10px;
+    }
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    
+    .card {
+        background-color: $color-light;
+        border-radius: 8px;
+        overflow: hidden;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        h3 {
+            font-size: 20px;
+            margin: 15px 0;
+            color: $color-dark;
+        }
+        
+        p {
+            font-size: 14px;
+            color: $color-dark;
+            margin: 0 20px 20px;
+        }
+    }
+}

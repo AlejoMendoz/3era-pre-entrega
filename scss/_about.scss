@@ -1,0 +1,45 @@
+/* _about.scss */
+
+
+.about-me {
+    background-color: $color-black;
+    color: $color-white;
+    text-align: center;
+    padding: $spacing-large$spacing-base;
+  
+    h2 {
+      font-size: $font-medium;
+      margin-bottom: $spacing-base;
+    }
+  
+    p {
+      font-size: $font-size-base;
+      max-width: 800px;
+      margin: 0 auto $spacing-large auto;
+      line-height: 1.6;
+    }
+  
+    .about-me-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: $spacing-base;
+      justify-content: center;
+      align-items: center;
+  
+      .stat {
+        text-align: center;
+  
+        .number {
+          font-size: 64px;
+          color: $color-primary;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+  
+        .label {
+          font-size: 18px;
+          color: $color-white;
+        }
+      }
+    }
+  }

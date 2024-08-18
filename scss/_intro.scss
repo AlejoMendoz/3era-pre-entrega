@@ -1,0 +1,35 @@
+/* _intro.scss*/
+
+#intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+  
+    .UX-UI-text {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-base;
+  
+      .small-text {
+        font-size: 20px;
+        color: $color-dark;
+      }
+  
+      h1 {
+        font-size: $font-size-large;
+        color: $color-secondary;
+      }
+  
+      p {
+        font-size: $font-size-base;
+        color: $color-gray-dark;
+      }
+    }
+  
+    .Logo-grandeimg {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
