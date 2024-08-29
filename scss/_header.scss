@@ -6,10 +6,10 @@ header {
     padding: $spacing-base;
     background-color: $color-background;
   
-    .logoimg {
+    header .navbar-brand img {
       max-height: 50px;
     }
-  
+    
     nav {
       ul {
         list-style: none;

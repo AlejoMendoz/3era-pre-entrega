@@ -1,31 +1,59 @@
 /* _footer.scss */
 
-
 footer {
-    background-color: $color-black;
-    color: $color-white;
-    text-align: center;
-    padding: $spacing-base;
-    position: relative;
-  
-    .footer-logoimg {
-      max-height: 50px;
-      margin-bottom: $spacing-base;
-    }
-  
-    .footer-navul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-  
-      li {
-        a {
-          text-decoration: none;
-          color: $color-white;
-          font-size: $font-size-base;
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+  padding: 30px ; // Más espacio para un diseño más abierto
+  position: relative;
+
+  .footer-logoimg {
+    max-height: 60px; // Un poco más grande para más visibilidad
+    margin-bottom: $spacing-base;
+  }
+
+  .footer-nav {
+    list-style: none;  // Elimina los bullets
+    padding: 0;
+    margin: 0;
+    display: flex;  // Hace que los elementos del menú estén en línea
+    justify-content: center; 
+
+    li {
+      margin: 0 20px; // Añadir margen entre los elementos del menú
+      a {
+        text-decoration: none;
+        color: $color-white;
+        font-size: 12px;
+        transition: color 0.3s ease; // Añadir una transición suave
+
+        &:hover {
+          color: $color-primary; // Cambiar color al pasar el mouse
         }
       }
     }
   }
+
+
+  .footer-copy {
+    margin-top: 30px;
+    font-size: 10px;
+    color: $color-gray;
+  }
+}
+
+/* _footer.scss */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366; /* Color verde de WhatsApp */
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.whatsapp-button img {
+  width: 40px;
+  height: 40px;
+}

@@ -2,11 +2,11 @@
 
 @import 'variables';
 
+/* _about.scss */
 .services-tittle {
     text-align: center;
     padding: 50px 20px;
-}
-
+  }
 .services-container {
     display: flex;
     justify-content: space-around;
@@ -49,29 +49,31 @@
     }
 }
 
+// Estilos para el contenedor de tarjetas
 .portfolio-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
+}
 
-    .card {
-        background-color: $color-light;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        text-align: center;
+// Estilos para las tarjetas individuales
+.card {
+    background-color: $color-light;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
 
-        img {
-            width: 100%;
-            height: auto;
-        }
+    img {
+        width: 100%;
+        height: auto;
+    }
 
-        h3 {
-            font-size: 20px;
-            margin: 15px 0;
-            color: $color-dark;
-        }
+    h3 {
+        font-size: 20px;
+        margin: 15px 0;
+        color: $color-dark;
     }
 }
 
@@ -111,3 +113,5 @@
         margin: 10px 0;
     }
 }
+
+
