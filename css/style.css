@@ -1,3 +1,117 @@
+@charset "UTF-8";
+/* _responsive.scss */
+/* Media Queries Generales */
+@media (max-width: 992px) {
+  #intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  #intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #intro .Logo-grande {
+    order: 2;
+    margin-top: 20px;
+  }
+  #intro .UX-UI-text {
+    order: 1;
+  }
+  .Logo-grande img {
+    max-width: 100%;
+    height: auto;
+  }
+  .portfolio-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .card {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .card h3 {
+    font-size: 14px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .UX-UI-text .small-text {
+    font-size: 16px;
+  }
+  .UX-UI-text h1 {
+    font-size: 24px;
+  }
+  .UX-UI-text p {
+    font-size: 14px;
+  }
+  .Logo-grande img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+/* Media Queries Página Portfolio */
+@media (max-width: 768px) {
+  .portfolio-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .card h3 {
+    font-size: 18px;
+  }
+  .card p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .portfolio-header {
+    padding: 30px 10px;
+  }
+  .portfolio-header h1 {
+    font-size: 30px;
+  }
+  .portfolio-header p {
+    font-size: 16px;
+  }
+  .portfolio-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .portfolio-container .card {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .portfolio-container .card h3 {
+    font-size: 16px;
+  }
+  .portfolio-container .card p {
+    font-size: 10px;
+  }
+  .portfolio-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .portfolio-cards .card {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .portfolio-cards .card h3 {
+    font-size: 16px;
+  }
+}
 /* _header.scss */
 /* Nesting */
 header {
@@ -27,7 +141,6 @@ header nav ul li a {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 10px;
-  /* _intro.scss */
 }
 #intro .UX-UI-text {
   display: flex;
@@ -46,7 +159,7 @@ header nav ul li a {
   font-size: 16px;
   color: #666;
 }
-#intro #intro .Logo-grande img {
+#intro .Logo-grande img {
   max-width: 100%;
   height: auto;
 }
