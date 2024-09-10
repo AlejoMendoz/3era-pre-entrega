@@ -80,9 +80,7 @@
 .core {
     background-color: $color-light;
     padding: 50px;
-    margin: auto;
-    max-width: 1200px;
-    text-align: left;
+    text-align: center;
 
     h2 {
         margin-bottom: 15px;
@@ -98,7 +96,7 @@
 
 .testimonial {
     background-color: $color-secondary;
-    padding: 20px;
+    padding: 80px;
     text-align: center;
 
     h2 {

@@ -4,6 +4,9 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 10px;
+  
+  padding: 50px;
+  background-color:$color-background ;
 
   .UX-UI-text {
     display: flex;
@@ -17,7 +20,7 @@
 
     h1 {
       font-size: $font-size-large;
-      color: $color-secondary;
+      color: $color-black;
     }
 
     p {
@@ -32,4 +35,62 @@
       height: auto;
     }
   }
+} 
+
+
+/*PAgina de Blog estilos*/
+
+.design-insights{ 
+  text-align: center;
+  padding: 50px;
 }
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr; // Dividir el espacio en dos columnas iguales
+  gap: $spacing-large; // Espacio entre columnas, ajusta según sea necesario
+  align-items: center; // Centrar verticalmente el contenido en las filas
+  padding: 50px;
+  padding: $spacing-large $spacing-base; // Ajusta el espaciado alrededor de la sección
+  
+  
+  .text-content {
+      order: 1; // Asegura que el texto esté a la izquierda
+      text-align: center; // Alineación centrada del texto
+      h2 {
+          font-size: $font-medium;
+          color: $color-black;
+          margin-bottom: $spacing-base;
+      }
+      p {
+          font-size: 1rem;
+          color: $color-black;
+          line-height: 1.6; // Mejor legibilidad
+      }
+  }
+
+  .image-content {
+      order: 2; // Asegura que la imagen esté a la derecha
+      display: flex;
+      justify-content: flex-end; // Alinear las imágenes a la derecha
+      gap: $spacing-base; // Espacio entre las imágenes, si hay más de una
+      
+      img {
+          width: 100%;
+          height: auto;
+          max-width: 100%; // Ajusta el tamaño máximo de las imágenes
+      }
+  }
+}
+
+.blog-post {
+  .image-content {
+      display: flex;
+      gap: $spacing-base;
+      justify-content: space-between; // Espacio entre las imágenes dentro del blog post
+      img {
+          max-width: 48%; // Ajusta el tamaño de cada imagen dentro de la grilla
+      }
+  }
+}
+

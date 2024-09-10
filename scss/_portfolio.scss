@@ -1,47 +1,12 @@
 /* _portfolio.scss*/
 
-.portfolio-header {
-    background-color: #96DAEA;
-    color: #333;
-    text-align: center;
-    padding: 50px 20px;
-  }
-  .portfolio-header h1 {
-    font-size: 36px;
-    margin: 0;
-  }
-  .portfolio-header p {
-    font-size: 18px;
-    margin-top: 10px;
-  }
 
-  .portfolio-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-  }
-  .portfolio-cards .card {
-    background-color: #F7F7F7;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  .portfolio-cards .card img {
-    width: 100%;
-    height: auto;
-  }
-  .portfolio-cards .card h3 {
-    font-size: 20px;
-    margin: 15px 0;
-    color: #333;
-  }
+
 .portfolio-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: $spacing-base;
-    padding: $spacing-base;
+    padding: 50px;
   
     .card {
       background-color: $color-background;
@@ -69,7 +34,7 @@
   }
 
 
-  // Estilos generales de la página
+  /*Estilos generales de la página*/
 .My-portfolio {
     background-color: $color-primary;
     color: $color-dark;
@@ -91,6 +56,7 @@
 .educational-img {
     width: 100%;
     text-align: center;
+    background-color: $color-light;
     
     img {
         max-width: 70%;
@@ -100,10 +66,9 @@
 
 .description, .core {
     background-color: $color-light;
-    padding: 50px;
+    padding: 80px;
     margin: auto;
-    text-align: left;
-    max-width: 1200px;
+
     
     h2 {
         margin-bottom: 15px;

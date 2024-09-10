@@ -1,0 +1,70 @@
+
+@import 'variables'; 
+
+.getintouch {
+  background-color: #FBD1CC; // Fondo rosado
+  padding: 40px; // Añade un padding para espaciar la sección internamente
+  border-radius: 8px; // Bordes redondeados para un aspecto más suave
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+      font-size: 2rem;
+      color: #000000; // Color del texto principal
+      margin-bottom: 20px; // Espacio inferior del título
+  }
+
+  p {
+      font-size: 1rem;
+      color: #333333; // Color del texto secundario
+      margin-bottom: 10px;
+  }
+
+  form {
+      background-color: #ffffff; // Fondo blanco para el formulario
+      padding: 20px;
+      border-radius: 8px; // Bordes redondeados
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra para darle profundidad al formulario
+      max-width: 400px; // Ancho máximo del formulario
+      width: 100%;
+  }
+
+  .form-group {
+      margin-bottom: 20px; // Espaciado entre los grupos de formularios
+
+      input,
+      textarea {
+          width: 100%; // Ocupa todo el ancho disponible
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px; // Bordes redondeados
+          font-size: 1rem;
+      }
+
+      textarea {
+          resize: vertical; // Permite redimensionar verticalmente
+          min-height: 100px; // Altura mínima para la caja de texto
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+          color: #888888; // Color del texto placeholder
+      }
+  }
+
+  button {
+      background-color: #000000; // Botón con fondo negro
+      color: #ffffff; // Texto blanco en el botón
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px; // Bordes redondeados
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+          background-color: #333333; // Cambia el color al pasar el cursor
+      }
+  }
+}
