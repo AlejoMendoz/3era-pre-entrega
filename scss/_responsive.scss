@@ -44,15 +44,15 @@
 
 .UX-UI-text {
   .small-text {
-    font-size: 18px; // Ajusta el tamaño del texto pequeño
+    font-size: 18px; 
   }
 
   h1 {
-    font-size: $font-size-medium; // Reduce el tamaño del título
+    font-size: $font-size-medium; 
   }
 
   p {
-    font-size: $font-size-small; // Reduce el tamaño del párrafo
+    font-size: $font-size-small; 
   }
 }
 
@@ -114,8 +114,8 @@
 
 @media (max-width: 992px) {
   #intro {
-    grid-template-columns: 1fr; // Cambia a una columna
-    text-align: center; // Centra el texto
+    grid-template-columns: 1fr; 
+    text-align: center; 
   }
 }
 
@@ -135,19 +135,11 @@
   }
 
   .Logo-grande img {
-    max-width: 80%; // Reduce el tamaño de la imagen
-    margin: 0 auto; // Centra la imagen
+    max-width: 80%; 
+    margin: 0 auto;
   }
 }
 
-   // Media query para pantallas pequeñas (ajustar a una sola columna si es necesario)
-@media (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr); // 2 columnas en pantallas medianas
-}
-
-@media (max-width: 480px) {
-    grid-template-columns: 1fr; // 1 columna en pantallas pequeñas
-}
 
 /* Media Queries Página Portfolio */
 @media (max-width: 768px) {
