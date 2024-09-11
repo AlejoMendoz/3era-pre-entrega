@@ -214,6 +214,9 @@ header nav ul li a {
 .blog-post .image-content img {
   max-width: 48%;
 }
+.blog-post .image-content img :hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 /* _about.scss */
 .about-me {

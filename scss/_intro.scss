@@ -90,6 +90,10 @@
       justify-content: space-between; // Espacio entre las imágenes dentro del blog post
       img {
           max-width: 48%; // Ajusta el tamaño de cada imagen dentro de la grilla
+          & :hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          }
+          
       }
   }
 }
