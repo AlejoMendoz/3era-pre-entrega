@@ -297,9 +297,19 @@ header nav ul li a {
 
 .portfolio-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(3);
+  gap: 30px;
+  padding: 60px;
+}
+@media (min-width: 768px) {
+  .portfolio-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .card {
@@ -308,10 +318,17 @@ header nav ul li a {
   overflow: hidden;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .card img {
   width: 100%;
   height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 .card h3 {
   font-size: 20px;

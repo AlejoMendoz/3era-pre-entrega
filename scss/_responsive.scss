@@ -140,6 +140,15 @@
   }
 }
 
+   // Media query para pantallas pequeñas (ajustar a una sola columna si es necesario)
+@media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); // 2 columnas en pantallas medianas
+}
+
+@media (max-width: 480px) {
+    grid-template-columns: 1fr; // 1 columna en pantallas pequeñas
+}
+
 /* Media Queries Página Portfolio */
 @media (max-width: 768px) {
   .portfolio-container {
@@ -215,3 +224,4 @@
     }
   }
 }
+

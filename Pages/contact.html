@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 
-  <!-- link de mi css -->
-  <link rel="stylesheet" href="../css/style.css">
- 
-  <!-- Link de Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- link de mi tipografia-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <!-- Link de CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Link de Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Link de tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -33,7 +32,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.htm">Home</a>
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Services.html">Services</a>
@@ -52,127 +51,98 @@
         </nav>
     </header>
 
-        <main>
-
-            <!-- Textos get in touch -->
-            <div class="getintouch">
-                <!-- Titulos de intro-->
-                <div class="getintouch">
-                    <!-- Titulo principal-->
-                    <h2>Get in Touch</h2>
-                    <p>Ready to take your web and app design, as well as branding, to new heights? Partner with Grant Studio, where creativity meets quality, and results meet excellence. Together, let's shape a digital experience that sets you apart.</p> 
-
-                    <p>
-                        318 3821693
-                    </p>
-                    <p>
-                        di.alejandromendoza@gmail.com
-                    </p>
-                    <p>
-                        Bogotá, Colombia.
-                    </p>
-                </div>
-
-                <!-- Formulario get in touch-->
-                <form>
-                    <fieldset>
-                        <div class="form-group">
-                            <label for="firstName" hidden>First Name</label>
-                            <input type="text" id="firstName"  placeholder="First Name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email" hidden >Email</label>
-                            <input type="email" id="email" placeholder="Email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone" hidden>Phone Number</label>
-                            <input type="tel" id="phone"  placeholder="Phone Number" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message" hidden>Your Message</label>
-                            <textarea id="message" cols="30" rows="20 "placeholder="Your Message" required></textarea>
-                        </div>
-                    </fieldset>
-                </form>
-                </div>
-
+    <main>
+        <!-- Sección "Get in Touch" -->
+        <div class="get-in-touch">
+            <div>
+                <h2>Get in Touch</h2>
+                <p>Ready to take your web and app design, as well as branding, to new heights? Partner with Grant Studio, where creativity meets quality, and results meet excellence. Together, let's shape a digital experience that sets you apart.</p> 
+                <p>318 3821693</p>
+                <p>di.alejandromendoza@gmail.com</p>
+                <p>Bogotá, Colombia.</p>
             </div>
 
-
-         <!-- Nueva sección testimonial -->
-      
-    <div class="testimonial">
-        <!-- Titulo pequeño-->
-        <h2>Testimonial</h2>
-        
-        <!--Comentario -->
-        <p>Sara Jones's designs are both visually captivating and highly effective. She transformed our website, enhancing user engagement and conversions. Her attention to detail and creative approach are top-notch. Highly recommended!</p>
-    </div>
-
-
-    <!-- Sección de My Portfolio -->
-    <section id="portfolio">
-        <!-- Titulo MY portfolio -->
-        <h2>My Portfolio</h2>
-        <p>Explore my latest projects showcasing my skills in web design, branding, and user experience.</p>
-        
-        <div class="portfolio-container">
-           <!-- Proyecto numero 1-->
-            <div class="project-card">
-                <img src="../assets/Image 1.png" alt="Proyecto 1">
-                <h3>Project 1 Title</h3>
-                <p>Dive into the world of web typography and discover how to choose, pair, and optimize fonts for compelling and readable digital designs.</p>
-            </div>
-            
-            <!-- Proyecto numero 2-->
-            <div class="project-card">
-                <img src="../assets/Image 2.png" alt="Proyecto 2">
-                <h3>Project 2 Title</h3>
-                <p>Explore how color choices impact user emotions and decision-making in UX design.</p>
-            </div>
-            
-            <!-- Proyecto numero 3-->
-            <div class="project-card">
-                <img src="../assets/Image 3.png" alt="Proyecto 3">
-                <h3>Project 3 Title</h3>
-                <p>Discover the power of microinteractions in enhancing user experience and engagement.</p>
-            </div>
+            <!-- Formulario "Get in Touch" -->
+            <form class="form-group">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="firstName" hidden>First Name</label>
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" hidden>Email</label>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" hidden>Phone Number</label>
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" hidden>Your Message</label>
+                        <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </fieldset>
+            </form>
         </div>
-    </section>
 
-        </main>
-
-<!-- Footer -->
-<footer>
-    <div class="footer-content">
-        <div class="footer-logo">
-            <a href="../index.html">
-                <img src="../assets/Logo footer.png" alt="Logo de la Empresa">
-            </a>
+        
+        <!-- Nueva sección "Testimonial" -->
+        <div class="testimonial">
+            <h2>Testimonial</h2>
+            <p>Sara Jones's designs are both visually captivating and highly effective. She transformed our website, enhancing user engagement and conversions. Her attention to detail and creative approach are top-notch. Highly recommended!</p>
         </div>
-        <nav class="footer-nav">
-            <!-- Lista menu footer-->
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../Pages/services.html">Services</a></li>
-                <li><a href="../Pages/portfolio.html">Portfolio</a></li>
-                <li><a href="../Pages/blog.html">Blog</a></li>
-            </ul>
-        </nav>
 
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 Grant Studio. All Rights Reserved.</p>
-    </div>
-</footer>
+        <!-- Sección de "My Portfolio" -->
+        <section id="portfolio">
+            <h2>My Portfolio</h2>
+            <p>Explore my latest projects showcasing my skills in web design, branding, and user experience.</p>
+            <div class="portfolio-container">
+                <div class="project-card">
+                    <img src="../assets/Image 1.png" alt="Proyecto 1">
+                    <h3>Project 1 Title</h3>
+                    <p>Dive into the world of web typography and discover how to choose, pair, and optimize fonts for compelling and readable digital designs.</p>
+                </div>
+                <div class="project-card">
+                    <img src="../assets/Image 2.png" alt="Proyecto 2">
+                    <h3>Project 2 Title</h3>
+                    <p>Explore how color choices impact user emotions and decision-making in UX design.</p>
+                </div>
+                <div class="project-card">
+                    <img src="../assets/Image 3.png" alt="Proyecto 3">
+                    <h3>Project 3 Title</h3>
+                    <p>Discover the power of microinteractions in enhancing user experience and engagement.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<!-- Link de jQuery y Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="../index.html">
+                    <img src="../assets/Logo footer.png" alt="Logo de la Empresa">
+                </a>
+            </div>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Pages/services.html">Services</a></li>
+                    <li><a href="../Pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="../Pages/blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Grant Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link de jQuery y Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
